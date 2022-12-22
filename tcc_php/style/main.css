@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --color-white: #ffffff;
+    --color-lighter-gray: #f7f7f7;
+    --color-light-gray: #e7e7e7;
+    --color-gray: #c9c9c9;
+    --color-darkgray: #4d4d4d;
+    --color-black: #202020;
+
+    --color-azul0: #00427f;
+    --color-azul1: #0a77dd;
+    --color-azul2: #42a3ff;
+
+    --color-green0: #42ba78;
+    --color-green1: #38ec89;
+    
+    --color-darkgreen2: #00662e;
+    --color-darkgreen3: #1f4931;
+
+    --color-vermelho: red;
+    --color-vermelho0: #500021;
+    --color-vermelho1: #88001b;
+    --color-vermelho2: #a80008;
+    
+    --color-yellow: #ff8400;
+
+
+
+
+    /*BOTOES*/
+    --botao-azul-fora: var(--color-azul1);
+    --botao-azul-dentro: var(--color-white);
+
+    --botao-cinza: var(--color-gray);
+
+    --botao-branco: var(--color-white);
+
+    --botao-vermelho-fora: var(--color-vermelho);
+    --botao-vermelho-dentro: var(--color-white);
+
+    --botao-verde-fora: var(--color-green0);
+    --botao-verde-hover: var(--color-green1);
+    --botao-verde-dentro: black;
+    --botao-verde-dentro1: var(--color-darkgreen2);
+
+
+    /*OPERACOES*/
+    --color-editar: var(--color-gray);
+    --color-editar-hover: var(--color-light-gray);
+    
+    --color-remover: var(--color-gray);
+    --color-remover-hover: var(--color-vermelho);
+
+    --color-check: var(--color-azul1);
+    --color-check-hover: var(--color-azul2);
+    --color-check-active: var(--color-green0);
+    
+    --color-vis: var(--color-darkgray);
+    --color-vis-hover: var(--color-azul1);
+    
+    /*METAS*/
+    --color-expirada: var(--color-vermelho);
+    --color-quase-expirada: var(--color-yellow);
+    
+
+    /*FORMULARIO*/
+    --color-fundo1: var(--color-azul0);
+    --color-fundo2: var(--color-green0);
+
+
+
+    --color-logo: var(--color-green0);
+
+    --color-sucesso: var(--color-azul0);
+
+    --color-falha: var(--color-vermelho1);
+    
+
+    --color-nav: var(--color-azul0);
+}
+
+
+
+* {
+    padding: 0; margin: 0;
+    box-sizing: border-box;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: large;
+}
+
+
+
+h1 {
+    font-size: 72px;
+    font-weight: 900;
+}
+
+
+h3 {
+    font-size: 48px;
+    font-weight: 900;
+
+    text-transform: uppercase;
+}
+
+
+
+a.botaotofill-azul, input.botaotofill-azul {
+    padding: 5px;
+
+    border: 3px solid var(--color-azul1);
+    
+    /*REDONDO*/
+	border-radius: 10px;
+    
+    font-weight: 800;
+    text-transform: uppercase;
+
+    background-color: transparent;
+    color: var(--color-azul1);
+
+    cursor: pointer;
+
+    transition: .1s;
+}
+a.botaotofill-azul:hover, a.botaotofill-azul:focus, input.botaotofill-azul:hover, input.botaotofill-azul:focus {
+    background-color: var(--color-azul1);
+    color: var(--color-white);
+}
+
+
+
+a.botaotofill-cinza-vermelho {
+    padding: 5px;
+
+    border: 3px solid var(--botao-cinza);
+    /*REDONDO*/
+	border-radius: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+
+    background-color: transparent;
+    color: var(--botao-cinza);
+
+    transition: .1s;
+}
+a.botaotofill-cinza-vermelho:hover {
+    background-color: var(--botao-vermelho-fora);
+    border: 3px solid var(--botao-vermelho-fora);
+    color: var(--botao-vermelho-dentro);
+}
+
+
+
+a.botaofilled-verde {
+    padding: 5px;
+
+    border: 3px solid var(--botao-verde-dentro);
+    /*REDONDO*/
+	border-radius: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+
+    background-color: var(--botao-verde-fora);
+    color: var(--botao-verde-dentro);
+
+    transition: .1s;
+}
+
+a.botaofilled-verde:hover {
+    background-color: var(--botao-verde-hover);
+    
+    border: 3px solid var(--botao-verde-hover);
+}
+
+
+
+a.botaotofill-verde, input.botaotofill-verde {
+    padding: 5px;
+
+    border: 3px solid var(--botao-verde-fora);
+    
+    /*REDONDO*/
+	border-radius: 10px;
+    
+    font-weight: 800;
+    text-transform: uppercase;
+
+    background-color: transparent;
+    color: var(--botao-verde-fora);
+
+    transition: .1s;
+}
+a.botaotofill-verde:hover, a.botaotofill-verde:focus, input.botaotofill-verde:hover, input.botaotofill-verde:focus {
+    background-color: var(--botao-verde-fora); color: var(--botao-verde-dentro1);
+}
+
+
+
+a.botaotofill-verde2, input.botaotofill-verde2 {
+    padding: 5px;
+
+    border: 3px solid var(--botao-verde-dentro1);
+    
+    /*REDONDO*/
+	border-radius: 10px;
+    
+    font-weight: 800;
+    text-transform: uppercase;
+
+    background-color: transparent;
+    color: var(--botao-verde-dentro1);
+
+    transition: .1s;
+}
+a.botaotofill-verde2:hover, a.botaotofill-verde2:focus, input.botaotofill-verde2:hover, input.botaotofill-verde2:focus {
+    background-color: var(--botao-verde-fora); color: var(--color-black);
+    
+    border: 3px solid var(--botao-verde-fora);
+}
+
+
+
+a.botaotofill-branco {
+    padding: 5px;
+
+    border: 3px solid var(--botao-branco);
+    /*REDONDO*/
+	border-radius: 10px;
+	
+    font-weight: 800;
+    text-transform: uppercase;
+
+    background-color: transparent;
+    color: var(--botao-branco);
+
+    transition: .1s;
+}
+a.botaotofill-branco:hover, a.botaotofill-branco:focus {
+    background-color: var(--botao-branco); color: var(--color-azul0);
+}
+
+
+
+a.botaotofill-azulverde {
+	padding: 10px;
+
+    border: 3px solid var(--color-azul1);
+    
+    /*REDONDO*/
+	border-radius: 10px;
+    
+    font-weight: 800;
+    text-transform: uppercase;
+
+    background-color: transparent;
+    color: var(--color-azul1);
+
+    cursor: pointer;
+
+    transition: .1s;
+}
+
+
+
+a.botaotofill-azulverde:hover {
+	background: linear-gradient(45deg, var(--color-azul1) 0, var(--color-green0) 100%);
+	color: var(--color-white);
+	
+	border: 3px solid var(--color-white);
+}

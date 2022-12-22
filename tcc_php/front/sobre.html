@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+
+    <link rel="stylesheet" href="../style/main.css">
+    <link rel="stylesheet" href="../style/sobre.css">
+    <link rel="stylesheet" href="../style/rodape.css">
+    <link rel="stylesheet" href="../style/nav.css">
+</head>
+
+<body>
+    <nav>
+        <a class="titulo" href="index.html">RegCycle</a>
+
+        <ul>
+            <a href="index.html"><li>home</li></a>
+
+            <a href="sobre.html"><li>sobre</li></a>
+
+            <a href="como_funciona.html"><li>como funciona</li></a>
+        </ul>
+    </nav>
+
+    <div class="sobre bloco">
+    	<div class="header">
+    		<h3 class="titulo">Sobre a RegCycle</h3>
+    		
+    		<a class="seta" href="#sobre-texto"><i class="fas fa-chevron-down"></i></a>
+    	</div>
+    </div>
+    
+    <div id="sobre-texto" class="fileira">
+    	<div class="welcome bloco" >
+	    	<div class="box">
+	    		<h4>Seja bem-vindo(a) a RegCycle!</h4>
+	    		
+	    		<p>A RegCycle é um projeto de TCC do curso integral de Informática do Instituto Federal de São Paulo campus Hortolândia com a reciclagem como tema.</p>
+	    	</div>
+	   		
+	   	</div>
+	   	
+	   	<div class="bloco objetivos">
+	   		<div class="box">
+	   			<h4>Quais os objetivos do projeto?</h4>
+	   			
+	   			<p>Essa aplicação web tem como objetivo organizar ou facilitar, principalmente, o cotidiano de corajosas pessoas que trabalham no ramo da reciclagem e que querem gerir ou controlar as suas atividades.</p>
+	   		</div>
+	   	</div>´
+	   	
+	   	
+	   	
+	   	<div class="bloco como">
+	   		<div class="box">
+	   			<h4>Mas como funciona?</h4>
+	   			
+	   			<p>Nosso site oferece um painel de usuário bem informativo e de fácil uso que oferece ferramentas de registro de vendas e definições de metas.</p>
+	   			
+	   			<a class="botaotofill-azulverde botao" href="como_funciona.html">APRENDA COMO <i class="fas fa-arrow-right"></i></a>
+	   		</div>
+	   	</div>
+    </div>
+    
+    
+   	
+   	
+    	
+    <div class="bloco equipe">
+    	<h3 class="titulo">A Equipe</h3>
+    	
+    	<div class="integrantes">
+	    	<div class="integrante praesquerda">
+	    		<img class="foto" src="../img/ambev.jpg">
+	    		
+	    		<div class="info">
+	    			<h4 class="nome">Amber Cristina</h4>
+	    			<p class="cargo">desenvolvedora</p>
+	    		</div>
+	    	</div>
+	    	
+	    	<div class="integrante pradireita">
+	    		<div class="info">
+	    			<h4 class="nome direita">Lara Victoria</h4>
+	    			<p class="cargo direita">desenvolvedora</p>
+	    		</div>
+	    		
+	    		<img class="foto" src="../img/lata.jpg">
+	    	</div>
+	    	
+	    	<div class="integrante praesquerda">
+	    		<img class="foto" src="../img/math.jpg">
+	    		
+	    		<div class="info">
+	    			<h4 class="nome">Matheus Pinheiro</h4>
+	    			<p class="cargo">desenvolvedor</p>
+	    		</div>
+	    	</div>
+	    	
+	    	<div class="integrante pradireita">
+	    		<div class="info">
+	    			<h4 class="nome direita">Andrey de Assis</h4>
+	    			<p class="cargo direita">desenvolvedor</p>
+	    		</div>
+	    		
+	    		<img class="foto" src="../img/drey.jpg">
+	    	</div>
+	    </div>
+    </div>
+    
+    <div class="footer">
+    	<ul>
+    		<li>
+    			Copyright © 2022
+    		</li>
+    		
+    		<a href="https://hto.ifsp.edu.br">
+    			<li>
+    				IFSP Campus Hortolândia
+    			</li>
+    		</a>
+    		
+    		<li>
+    			Desenvolvido por: Amber Cristina, Andrey de Assis, Matheus Pinheiro e Lara Victoria.
+    		</li>
+    		
+    	</ul>
+    	
+    </div>
+    
+    <script>
+	    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+	        anchor.addEventListener('click', function (e) {
+	            e.preventDefault();
+	
+	            document.querySelector(this.getAttribute('href')).scrollIntoView({
+	                behavior: 'smooth'
+	            });
+	        });
+	    });
+    </script>
+</body>
+</html>
