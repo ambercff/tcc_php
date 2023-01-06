@@ -1,3 +1,5 @@
+ ❗ DESENVOLVIDO EM CONJUNTO COM @xndyy ❗ 
+ 
  - Site desenvolvido para o tcc do Instituto Federal de Hortolândia. 
  - Esse projeto tem como base o tcc original, programado em Java Web. 
  - Projeto não concluído 
